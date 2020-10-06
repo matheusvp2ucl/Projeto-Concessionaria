@@ -7,6 +7,13 @@ class Veiculo{
   private double valor;
   private int km;
 
+  public Veiculo( string _marca, int _ano, double _valor, int _km ){
+    marca = _marca;
+    ano = _ano;
+    valor = _valor;
+    km = _km;
+  }
+
   public void Relatorio(){
     Console.WriteLine("Marca : {0}", marca);
     Console.WriteLine("Ano : {0}", ano);
