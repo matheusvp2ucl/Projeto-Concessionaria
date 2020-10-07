@@ -5,13 +5,21 @@ class Mostruario {
   private Vendedor representante;
   public List<Veiculo> carros;
 
-  public SetMostruario(){
+  public Mostruario( Vendedor _vendedor ){
+    representante = _vendedor;
     carros = new List<Veiculo>();
   }
 
-  public void SetRepresentante(Vendedor _vendedor){
+  public void SetRepresentante( Vendedor _vendedor ){
     representante = _vendedor;
   }
 
+  public double GetCalculaValor (){
+    double soma = 0;
+    for( int i = 0 ; i < carros.Count ; i++ ){
+      soma += carros[i].Valor;
+    }
+    return soma;
+  }
 
 }

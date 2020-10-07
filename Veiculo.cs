@@ -7,6 +7,26 @@ class Veiculo{
   private double valor;
   private int km;
 
+  public string Marca{
+    get { return marca; }
+    set { marca = value; }
+  }
+
+  public int Ano{
+    get { return ano; }
+    set { ano = value; }
+  }
+
+  public double Valor{
+    get { return valor; }
+    set { valor = value; }
+  }
+
+  public int Km{
+    get { return km; }
+    set { km = value; }
+  }
+
   public Veiculo( string _marca, int _ano, double _valor, int _km ){
     marca = _marca;
     ano = _ano;
