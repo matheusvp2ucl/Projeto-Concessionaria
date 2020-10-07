@@ -14,7 +14,7 @@ class Mostruario {
     representante = _vendedor;
   }
 
-  public double GetCalculaValor (){
+  public double CalculaValor (){
     double soma = 0;
     for( int i = 0 ; i < carros.Count ; i++ ){
       soma += carros[i].Valor;
